@@ -1,1 +1,4 @@
 name: GLPI Agent
+version: latest
+script: 'msiexec /i $package SERVER=$server'
+
