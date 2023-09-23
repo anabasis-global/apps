@@ -1,10 +1,12 @@
 
-  $options = @{
-  ADD_FIREWALL_EXCEPTION=1
-  ADDLOCAL="ALL"
-  EXECMODE=1
-  RUNNOW=1
-  SCAN_HOMEDIRS=1
-  SERVER="https://its.anabasis.pro/glpi/inventory"
+  $config = @{
+    TAG="office"
+    ADD_FIREWALL_EXCEPTION=1
+    ADDLOCAL="ALL"
+    EXECMODE=1
+    RUNNOW=1
+    SCAN_HOMEDIRS=1
+    SERVER=""
   }
+  
   $SetupOptions = "/quiet ADD_FIREWALL_EXCEPTION=1 ADDLOCAL=ALL ADDLOCAL=60 EXECMODE=1 RUNNOW=1 SCAN_HOMEDIRS=1 SERVER=$SetupServer"
